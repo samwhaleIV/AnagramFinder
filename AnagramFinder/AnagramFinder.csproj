@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Description>Find anagrams and subanagrams amongst a cached dictionary of your choice.</Description>
+    <Authors>Samuel Robinson</Authors>
+    <Company>mistopportunity</Company>
+    <Product>Anagram Finder</Product>
+    <NeutralLanguage>en-US</NeutralLanguage>
+  </PropertyGroup>
+
+</Project>
