@@ -13,4 +13,7 @@ $"Largest word: {mappedWords.GetLargestWord()}";
 $"Largest anagram pair: {string.Join(", ",mappedWords.GetLargestAnagramPair())}";
 
 $"Largest anagram set: {string.Join(", ",mappedWords.GetLargestAnagramSet())}";
+
+List<string> possibleWords = mappedWords.GetAnagrams("Anagram");
+
 ```
