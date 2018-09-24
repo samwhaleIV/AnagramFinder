@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace AnagramFinderRemake {
@@ -204,7 +205,7 @@ namespace AnagramFinderRemake {
 			List<byte[]> bucket = new List<byte[]>();
 			foreach(var value in map.Values) {
 				if(value.GetCount()>bucket.Count) {
-					bucket=(List<byte[]>)value.Enumerate();
+					bucket=value.Enumerate().ToList();
 				}
 			}
 			foreach(var item in bucket) {
@@ -220,7 +221,7 @@ namespace AnagramFinderRemake {
 					var length = value.Value.Length;
 					if(length > largestLength) {
 						largestLength = length;
-						largestSet = (List<byte[]>)value.Enumerate();
+						largestSet = value.Enumerate().ToList();
 					}
 				}
 			}

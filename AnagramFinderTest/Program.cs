@@ -20,6 +20,8 @@ namespace AnagramFinderTest {
 
 			mappedWordsRemake = new AnagramFinderRemake.AnagramMap(alphabet,words);
 
+			WriteLine(string.Join(", ",mappedWordsRemake.GetLongestAnagramSet()));
+
 			Start:
 			Write("Enter a word to find its sub anagrams: ");
 			WriteLine(string.Join(", ",mappedWordsRemake.GetSubAnagrams(ReadLine())));
